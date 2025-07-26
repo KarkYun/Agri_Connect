@@ -461,6 +461,10 @@ section {
 .icon-green {
     color: #28a745; /* Bootstrap green*/
 }
+
+
+
+
 @media (max-width: 768px) {
   .hero-section .hero-content h1 {
     font-size: 4rem;

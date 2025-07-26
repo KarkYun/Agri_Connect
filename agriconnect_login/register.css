@@ -76,7 +76,7 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: transparent;
 }
 .header .logo {
   margin-right: auto;

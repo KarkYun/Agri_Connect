@@ -43,29 +43,17 @@ if(isset($_POST['register'])) {
 </head>
 <body>
     <header class="header">
-            <a href="#" class="logo"><i class="fas fa-seedling"></i>Agri Connect</a>
-                <!---<img src="images/logo.png" alt="Agro Logo">-->
-
-                <nav class="navbar">
+            <a href="../main/main.html" class="logo"><i class="fas fa-seedling"></i>Agri Connect</a>
+  
+             <nav class="navbar">
                     <div id="nav-close"class ="fas fa-times"></div>
-                    <a href="../main/main.html">Home</a>
-                    <a href="../index.html">Crops</a>
-                    <a href="#about">About</a>
-                    <a href="../shop/more.html">Shop</a>
-                    <a href="#reviews">Reviews</a>
-                    <a href="#blogs">Blogs</a>
-                    
+                  
                 
                 </nav>
             
                 <div class="icons">
                     <div class="fas fa-bars" id="menu-btn"></div>
-                    <a href="login.html"> 
-                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
-                    </a>
-                    <div class="fas fa-user" id="login-btn"></div>
-                    <div class="fas fa-search" id="search-btn"></div>
-                </div>
+                 
             
         </header>
 
@@ -115,10 +103,6 @@ if(isset($_POST['register'])) {
                 </form>
             </div>
         </div>
-
-        <style>
-
-        </style>
 
          <script src="script.js"></script>
 </body>
