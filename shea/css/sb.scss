@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,500&display=swap");
+
+$white: #fff;
+$green: #219150;
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #10221b;
+  }
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    background: #10221b;
+    color: #fff;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+
+  // Default state - white text and icons (except seedling)
+  .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+
+    i {
+      color: $green; // Keep seedling icon green
+    }
+  }
+
+  .navbar {
+    a {
+      margin-left: 2rem;
+      font-size: 1.7rem;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    #nav-close {
+      font-size: 5rem;
+      cursor: pointer;
+      color: $white;
+      display: none;
+    }
+  }
+
+  .icons {
+    a,
+    div {
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      cursor: pointer;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  // Active state - dark text and icons when background appears
+  &.active {
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+    .logo {
+      color: #10221b;
+
+      i {
+        color: $green; // Keep seedling icon green
+      }
+    }
+
+    .navbar {
+      a {
+        color: #10221b;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      #nav-close {
+        color: #10221b;
+      }
+    }
+
+    .icons {
+      a,
+      div {
+        color: #10221b;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  #close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  form {
+    width: 70rem;
+    display: flex;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid $white;
+    align-items: center;
+
+    input {
+      width: 100%;
+      font-size: 2rem;
+      color: $white;
+      text-transform: none;
+      background: none;
+      padding-right: 2rem;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    label {
+      font-size: 3rem;
+      cursor: pointer;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // Background video
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  // Overlay for better text readability
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  .hero-content {
+    width: 90%;
+    color: #10221b;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: bold;
+      color: yellow;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+      @media (max-width: 768px) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: $white;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+      @media (max-width: 768px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    .box {
+      padding: 2rem;
+      justify-content: center;
+      background-position: right !important;
+
+      &.second {
+        justify-content: center;
+        background-position: left !important;
+      }
+
+      .content {
+        text-align: center;
+
+        span {
+          font-size: 3rem;
+        }
+
+        h3 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: $white;
+      z-index: 10000;
+      width: 35rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      }
+
+      a {
+        margin: 1rem;
+        font-size: 3rem;
+      }
+
+      #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* footer begins */
+
+.footer {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/field.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; 
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .box {
+      h3 {
+        font-size: 2.2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+
+      a {
+        display: block;
+        font-size: 1.5rem;
+        color: $white;
+        padding: 1rem 0;
+
+        i {
+          color: $green;
+          padding-right: 0.5rem;
+        }
+
+        &:hover {
+          color: $green;
+
+          i {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .credit {
+    position: absolute;
+    top: 85%; // move it lower in the footer
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2.5rem 1rem 1rem 1rem;
+    color: $white;
+
+    span {
+      color: $green;
+    }
+  }
+}
+
+/* New styles for About and Gallery sections */
+
+.about-section {
+  color: #10221b;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+
+  h3 {
+    margin-top: 2.5rem;
+    font-size: 2.4rem;
+    color: $green;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 1.2rem;
+    text-align: justify;
+  }
+}
+
+.gallery-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 1.6rem;
+    color: #555;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Agri Connect - Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-seedling"></i>Agri Connect</a>
+      <!---<img src="images/logo.png" alt="Agro Logo">-->
+
+      <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="../main/main.html">Home</a>
+        <a href="../index.html">Crops</a>
+        <a href="#about">About</a>
+        <a href="../shop/more.html">Shop</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="more.html">
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </a>
+       <a href="../agriconnect_login/login.php"><span class="fas fa-user" id="login-btn"></span></a>
+        <div class="fas fa-search" id="search-btn"></div>
+      </div>
+    </header>
+
+    <div class="search-form">
+      <div id="close-search" class="fas fa-times"></div>
+
+      <form action="">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </div>
+
+    <!-- Agriculture Products Section -->
+    <section class="products-section">
+      
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="../images/Tomato Seeds.jpeg" alt="Tomato Seeds" />
+          <h3>Tomato Seeds</h3>
+          <p>High-yield, disease-resistant hybrid seeds.</p>
+          <span class="price">GHC 44.99</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="../images/Fertilizer.jpeg" alt="Organic Fertilizer" />
+          <h3>Organic Fertilizer</h3>
+          <p>Eco-friendly, boosts soil fertility.</p>
+          <span class="price">GHC 500.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="../images/Farmgloves.jpeg" alt="Farm gloves" />
+          <h3>Farm Gloves</h3>
+          <p>Durable and protective gloves for farming.</p>
+          <span class="price">GHC 29.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="../images/Shea butter.jpeg" alt="Shear Butter" />
+          <h3>Shea Butter</h3>
+          <p>Raw processed Butter</p>
+          <span class="price">GHC 29.99</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="../images/cocoa seeds.jpeg" alt="Cocoa Seeds" />
+          <h3>Cocoa Seeds</h3>
+          <p>The Best Cocoa Seeds</p>
+          <span class="price">GHC 2,000.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="../images/Yam tuber.jpeg" alt="Yam Tuber" />
+          <h3>Yam Tuber</h3>
+          <p>Fresh Yam tubers for your meals</p>
+          <span class="price">Ghc 30.00</span>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+     <!--footer starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+           <a href="../main/main.html">Home</a>
+            <a href="../index.html">Crops</a>
+            <a href="#about">About</a>
+            <a href="../shop/more.html">Shop</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#blogs">Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my orders</a>
+                <a href="#">my wishlist</a>
+                <a href="#">contact support</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+233-24-157-3153</a>
+                <a href="#"><i class="fas fa-envelope"></i>test@mail.com</a>
+                <a href="https://shorturl.at/tpnw1"><i class="fas fa-map"></i> Ghana </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter now x</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-github"></i>github</a>
+            </div>
+            <div class="credit">created by <span>Group 10</span> | all rights reserved!</div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
