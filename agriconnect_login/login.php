@@ -1,5 +1,7 @@
 <?php
-
+if(password_verify($_POST['password'], $stored_hash_from_db)) {
+    // Login successful
+}
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +55,7 @@
         <div class="wrapper">
             <div class="form-box login">
                 <h2>Sign in</h2>
-                <form action="homepage.php" method="post">
+                <form action="../index.html" method="post">
                     <div class="input-box">
                         
                         <label for="email">Email</label>

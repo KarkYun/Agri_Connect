@@ -8,7 +8,7 @@ if(isset($_POST['register'])) {
     $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $password = $_POST['password']; // Plain text (no hashing)
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hashed password
     
     // Check if email already exists
     $check_email = "SELECT * FROM users WHERE email='$email'";
