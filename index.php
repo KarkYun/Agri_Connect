@@ -114,7 +114,7 @@ if(isset($_POST['subscribe'])) {
                         <div class="content">
                             <h3>PINEAPPLE</h3>
                             <p>Pineapple is a popular fruit in Ghana, grown in various regions. It's a significant crop for many farmers, contributing to the country's agricultural economy. Ghana's pineapples are known for their sweetness and flavor, making them a favorite among locals and tourists alike.</p>
-                            <a href="Vincent/pine.html" class="btn">learn now</a>
+                            <a href="Pineapple/pine.html" class="btn">learn now</a>
                         </div>
                     </div>
                 </div>
