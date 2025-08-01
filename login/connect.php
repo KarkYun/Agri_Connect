@@ -3,7 +3,7 @@
 $dbhost = "localhost:3307";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "agriconnect_login"; // Define the main database name
+$dbname = "agriconnect_login"; 
 
 // Enable mysqli error reporting
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -16,13 +16,13 @@ try {
         throw new mysqli_sql_exception("Connection failed: " . mysqli_connect_error());
     }
     
-    echo "Connected successfully to database: $dbname<br>";
+    //echo "Connected successfully to database: $dbname";
     
 } catch (mysqli_sql_exception $e) {
     die("Failed to connect to the database: " . $e->getMessage());
 }
 
-// Optional: Object-oriented connections for specific uses
+
 $connLogin = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 if ($connLogin->connect_error) {
     die("OOP Connection failed: " . $connLogin->connect_error);

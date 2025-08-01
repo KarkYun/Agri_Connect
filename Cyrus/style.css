@@ -231,10 +231,14 @@ body {
   background: none;
   box-shadow: none;
   border-radius: 0;
-  padding: 0;
+  padding: 32px 0, 0, 0;
   opacity: 0;
   transform: translateX(-60px);
   transition: opacity 0.8s, transform 0.8s;
+  max-width: 900px;
+  margin: 110px auto 40px auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 .gallery-info.visible-info {
   opacity: 1;
@@ -255,6 +259,7 @@ body {
   transform: translateY(30px) scale(0.95);
   animation: headerFadeInUp 1.2s cubic-bezier(.4,2,.6,1) forwards;
   text-align: center;
+  margin: 30px 0 12px 0;
 }
 @keyframes slideInRight {
   from {
@@ -535,6 +540,35 @@ body {
 }
 .footer .credit span {
   color: #219150;
+}
+
+/* --- READ MORE FEATURE --- */
+.read-more-container {
+  position: relative;
+  margin-bottom: 2.2rem;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.5rem;
+}
+
+.read-more-link {
+  color: #219150;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.read-more-link:hover {
+  color: #145c2c;
+}
+
+.read-more-text {
+  display: none;
 }
 
 /* --- RESPONSIVE --- */
