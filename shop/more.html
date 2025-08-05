@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="cart.css" />
     <title>Agri Connect - Shop</title>
   </head>
@@ -24,16 +28,34 @@
         <a href="../shop/more.html">Shop</a>
         <a href="#reviews">Reviews</a>
         <a href="#blogs">Blogs</a>
+      
       </nav>
 
       <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
-        <a href="more.html">
-          <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        </a>
-       <a href="../login/login.php"><span class="fas fa-user" id="login-btn"></span></a>
-        <div class="fas fa-search" id="search-btn"></div>
+        <div id="cart-icon">
+        <span class="fas fa-shopping-cart"></span>
+        <span class="cart-item-count"></span>
       </div>
+       <a href="../login/login.php"><span class="fas fa-user" id="login-btn"></span></a>
+        
+        <div class="fas fa-search" id="search-btn"></div>
+     
+      
+         
+      </div>
+
+      <div class="cart">
+        <h1 class="cart-title">Shopping Cart</h1>
+        <div class="cart-content">
+            </div>
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
     </header>
 
     <div class="search-form">
@@ -56,84 +78,84 @@
       <div class="products-grid">
         <div class="product-card">
           <img src="../images/Tomato Seeds.jpeg" alt="Tomato Seeds" />
-          <h3>Tomato Seeds</h3>
+          <h3 class="product-title">Tomato Seeds</h3>
           <p>High-yield, disease-resistant hybrid seeds.</p>
           <span class="price">GHC 44.99</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Fertilizer.jpeg" alt="Organic Fertilizer" />
-          <h3>Organic Fertilizer</h3>
+          <h3 class="product-title">Organic Fertilizer</h3>
           <p>Eco-friendly, boosts soil fertility.</p>
           <span class="price">GHC 500.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Farmgloves.jpeg" alt="Farm gloves" />
-          <h3>Farm Gloves</h3>
+          <h3 class="product-title">Farm Gloves</h3>
           <p>Durable and protective gloves for farming.</p>
           <span class="price">GHC 29.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Shea butter.jpeg" alt="Shear Butter" />
-          <h3>Shea Butter</h3>
+          <h3 class="product-title">Shea Butter</h3>
           <p>Raw processed Butter</p>
           <span class="price">GHC 29.99</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/cocoa seeds.jpeg" alt="Cocoa Seeds" />
-          <h3>Cocoa Seeds</h3>
+          <h3 class="product-title">Cocoa Seeds</h3>
           <p>The Best Cocoa Seeds</p>
           <span class="price">GHC 2,000.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
        <div class="product-card">
           <img src="../images/Yam tuber.jpeg" alt="Yam Tuber" />
-          <h3>Yam Tuber</h3> 
+          <h3 class="product-title">Yam Tuber</h3> 
           <p>Fresh Yam tubers for your meals</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Mower.jpeg" alt="Mower" />
-          <h3>Mower</h3> 
+          <h3 class="product-title">Mower</h3> 
           <p></p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Cutlass.jpeg" alt="Cutlass" />
-          <h3>Cutlass</h3> 
+          <h3 class="product-title">Cutlass</h3> 
           <p>Nicely sharpened for a good cut</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/shears.jpeg" alt="Shear" />
-          <h3>Shears</h3> 
+          <h3 class="product-title">Shears</h3> 
           <p>Stand out on the field</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="../images/Cashew seeds.jpeg" alt="Cashew" />
-          <h3>Cashew Seeds</h3> 
+          <h3 class="product-title">Cashew Seeds</h3> 
           <p>Stand</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div> 
         <div class="product-card">
           <img src="../images/Shovel.jpeg" alt="Shovel" />
-          <h3>Shovel</h3> 
+          <h3 class="product-title">Shovel</h3> 
           <p>Stand</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
         </div>
          <div class="product-card">
           <img src="../images/Pick axe.jpeg" alt="Pick axe" />
-          <h3>Pick axe</h3> 
+          <h3 class="product-title">Pick axe</h3> 
           <p>Dig Deep!</p>
           <span class="price">Ghc 30.00</span>
           <button class="add-cart-btn">Add to Cart</button>
@@ -186,6 +208,7 @@
         </div>
     </section>
 
+    <script src="cart.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

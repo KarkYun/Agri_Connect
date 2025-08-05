@@ -4,6 +4,9 @@
 if(isset($_POST['subscribe'])) {
     // Include database connection
     include("login/connect.php");
+    // Include header
+    include 'searchbar/dbh.php';
+
     
     // Get email from newsletter form
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -29,6 +32,7 @@ if(isset($_POST['subscribe'])) {
     
     mysqli_close($conn);
 }
+
 
 ?>
 
@@ -68,9 +72,11 @@ if(isset($_POST['subscribe'])) {
 
     <div class="search-form">
         <div id="close-search" class="fas fa-times"></div>
-        <form action="">
-            <input type="search" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
+        <form action="SearchBar/search.php" method="POST">
+            <input type="search" placeholder="search here..." id="search-box" name="search">
+            <button type="submit" name="submit-search">
+                <span class="fas fa-search"></span> 
+            </button>
         </form>
     </div>
 
