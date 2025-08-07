@@ -59,19 +59,14 @@
     </header>
 
     <div class="search-form">
-      <div id="close-search" class="fas fa-times"></div>
-
-      <form action="">
-        <input
-          type="search"
-          name=""
-          placeholder="search here..."
-          id="search-box"
-        />
-        <label for="search-box" class="fas fa-search"></label>
-      </form>
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="../SearchBar/search.php" method="POST">
+            <input type="search" placeholder="search here..." id="search-box" name="search">
+            <button type="submit" name="submit-search">
+                <span class="fas fa-search"></span> 
+            </button>
+        </form>
     </div>
-
     <!-- Agriculture Products Section -->
     <section class="products-section">
       <h2 class="section-title"></h2>

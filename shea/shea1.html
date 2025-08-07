@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,7 @@
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
             <a href="../main/main.html">Home</a>
-            <a href="../index.html">Crops</a>
+            <a href="../index.php">Crops</a>
             <a href="#about">About</a>
             <a href="../shop/more.html">Shop</a>
         </nav>
@@ -31,16 +33,18 @@
         </div>
     </header>
 
+   
     <div class="search-form">
         <div id="close-search" class="fas fa-times"></div>
-        <form action="">
-            <input type="search" placeholder="search here..." id="search-box" />
-            <label for="search-box" class="fas fa-search"></label>
+        <form action="../SearchBar/search.php" method="POST">
+            <input type="search" placeholder="search here..." id="search-box" name="search">
+            <button type="submit" name="submit-search">
+                <span class="fas fa-search"></span> 
+            </button>
         </form>
     </div>
-
-    <section class="hero-section">
-        <div class="hero-content">
+    <section class="header-section">
+        <div class="header-content">
             <h1>Shea Nuts</h1>
             <p>- Ghana's Natural Gold -</p>
         </div>
@@ -174,7 +178,7 @@
             <div class="box">
                 <h3>quick links</h3>
                 <a href="../main/main.html">Home</a>
-                <a href="../index.html">Crops</a>
+                <a href="../index.php">Crops</a>
                 <a href="#about">About</a>
                 <a href="../shop/more.html">Shop</a>
                 <a href="#reviews">Reviews</a>
