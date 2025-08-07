@@ -26,7 +26,7 @@ include 'header.php';
             <div id="nav-close" class="fas fa-times"></div>
             <a href="../main/main.html">Home</a>
             <a href="../index.php">Crops</a>
-            <a href="../index.php">About</a>
+            <a href="../index.php#about">About</a>
             <a href="../shop/more.html">Shop</a>
            
         </nav>
@@ -100,15 +100,17 @@ include 'header.php';
         $term = strtolower($searchTerm);
         
         if (strpos($term, 'shop') !== false || 
-        strpos($term, 'product') !== false || 
-        strpos($term, 'featured') !== false || 
-        strpos($term, 'featured products') !== false) {
-        return '#shop';
+            strpos($term, 'product') !== false || 
+            strpos($term, 'featured') !== false || 
+            strpos($term, 'featured products') !== false) {
+            return '#shop';
         }
         elseif (strpos($term, 'about') !== false) {
             return '#about';
         }
-        elseif (strpos($term, 'more crops') !== false || strpos($term, 'crops') !== false) {
+        elseif (strpos($term, 'category') !== false || 
+                strpos($term, 'crops') !== false ||
+                strpos($term, 'more crops!') !== false) {
             return '#category';
         }
         elseif (strpos($term, 'facility') !== false || strpos($term, 'facilities') !== false) {

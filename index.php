@@ -132,7 +132,7 @@ if(isset($_POST['subscribe'])) {
     </section>
 
     <!-- Category Section -->
-    <section class="category">
+    <section class="category" id="category">
         <h1 class="heading">More Crops!</h1>
         <div class="box-container">
 
