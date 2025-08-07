@@ -30,7 +30,7 @@ include 'newsletter/news.php';
 
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
-            <a href="shop/cart.html"><span class="fas fa-shopping-cart" id="cart-btn"></span></a>
+           
             <a href="login/login.php"><span class="fas fa-user" id="login-btn"></span></a>
             <div class="fas fa-search" id="search-btn"></div>
         </div>
