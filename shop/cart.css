@@ -405,6 +405,8 @@ section {
     width: 100px;
     height: 80px;
     margin-left: 2rem;
+    margin: 0 auto; 
+    
   }
   .header .icons div,
   .header .icons a {
@@ -433,6 +435,7 @@ section {
     width: 80px;
     height: 70px;
     margin-left: 1rem;
+   
   }
   .header .logo {
     font-size: 2rem;
