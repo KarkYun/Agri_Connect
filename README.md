@@ -296,6 +296,5 @@ This project is for educational purposes. All rights reserved.
 
 ---
 
-**🌱 Developed with ❤️ by Group 10**
 
 *Connecting farmers, empowering agriculture*
