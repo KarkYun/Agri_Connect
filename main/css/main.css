@@ -250,6 +250,9 @@ html, body {
   line-height: 2;
   color: #10221b;
   text-align: center;
+  padding: 5rem;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
 }
 
 .about .content {

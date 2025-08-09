@@ -40,7 +40,7 @@ const cartContent = document.querySelector(".cart-content");
         <span class="cart-price">${productPrice}</span>
         <div class="cart-quantity">
           <button id="decrement">-</button>
-          <span id="number">1</span>
+          <span class="number">1</span>
           <button id="increment">+</button>
         </div> 
       </div>
@@ -83,6 +83,8 @@ const cartContent = document.querySelector(".cart-content");
         updateTotalPrice();
 
      };
+     
+
 
      const updateTotalPrice = () => {
       const totalPriceElement = document.querySelector(".total-price");
@@ -91,11 +93,11 @@ const cartContent = document.querySelector(".cart-content");
       cartBoxes.forEach(cartBox => {
         const priceElement = cartBox.querySelector(".cart-price");
         const quantityElement = cartBox.querySelector(".number");
-        const price = priceElement.textContent.replace("$", "");
+        const price = priceElement.textContent.replace("GHc", "");
         const quantity = quantityElement.textContent;
         total += price * quantity;
       });
-      totalPriceElement.textContent = `$${total}`;
+      totalPriceElement.textContent = `GHc ${total}`;
      };
 
      let cartItemCount = 0;
@@ -117,6 +119,7 @@ const cartContent = document.querySelector(".cart-content");
        const cartBoxes = cartContent.querySelectorAll(".cart-box");
        if (cartBoxes.length === 0){
          alert("Your cart is empty. Please add items to your cart before buying.");
+         return;
        }
 
        cartBoxes.forEach(cartBox => cartBox.remove());

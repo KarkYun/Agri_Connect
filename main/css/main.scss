@@ -194,6 +194,8 @@ section {
     }
 }
 
+
+
 //media queries
 @media (max-width:1200) {
 
@@ -308,6 +310,9 @@ p{
   line-height: 2;
   color: $black;
   text-align: center;
+  padding: 5rem;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
   
 }
 
