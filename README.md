@@ -131,11 +131,11 @@ Agri Connect is a comprehensive web platform that connects buyers with verified 
    Open your browser and navigate to:
 
    ```
-   http://localhost/Agri_Connect/index.php
+   http://localhost/Agri_Connect/main/main.html
    ```
 
    **Alternative Entry Points:**
-   - Main page: `http://localhost/Agri_Connect/main/main.html`
+   - PHP version: `http://localhost/Agri_Connect/index.php`
    - Login: `http://localhost/Agri_Connect/login/login.php`
    - Shop: `http://localhost/Agri_Connect/shop/more.html`
 
@@ -143,11 +143,11 @@ Agri Connect is a comprehensive web platform that connects buyers with verified 
 
 ```
 Agri_Connect/
-├── index.php                 # Main landing page
 ├── main/                     # Home page components
-│   ├── main.html
+│   ├── main.html            # Main entry point
 │   ├── css/
 │   └── js/
+├── index.php                 # Secondary landing page
 ├── login/                    # Authentication system
 │   ├── login.php
 │   ├── register.php
