@@ -9,7 +9,7 @@
     <title>Agri Connect - Checkout</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header active">
         <a href="../index.php" class="logo"><i class="fas fa-seedling"></i>Agri Connect</a>
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
@@ -21,10 +21,12 @@
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <a href="../shop/more.html">
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <span class="fas fa-shopping-cart" id="cart-btn"></span>
             </a>
-            <div class="fas fa-user" id="login-btn"></div>
-            <div class="fas fa-search" id="search-btn"></div>
+            <a href="../login/login.php">
+            <span class="fas fa-user" id="login-btn"></span>
+            </a>
+           
         </div>
     </header>
 
@@ -39,7 +41,7 @@
     <!-- Checkout Section -->
     <section class="checkout-section">
         <div class="checkout-container">
-            <h2>Checkout</h2>
+            <h2>CHECKOUT</h2>
             <form id="checkoutForm">
                 <!-- Shipping Info -->
                 <fieldset>
@@ -60,7 +62,7 @@
                     <input type="radio" id="creditCard" name="payment" value="creditCard" checked>
                     <label for="creditCard">Credit Card</label>
                     <input type="radio" id="mobileMoney" name="payment" value="mobileMoney">
-                    <label for="mobileMoney">Mobile Money</label>
+                    <label for="mobileMoney">Mobile Money</label> 
 
                     <div id="creditCardFields">
                         <label for="cardNumber">Card Number</label>
@@ -112,9 +114,9 @@
             <div class="box">
                 <h3>quick links</h3>
                 <a href="../main/main.html">Home</a>
-                <a href="../index.html">Crops</a>
+                <a href="../index.php">Crops</a>
                 <a href="#about">About</a>
-                <a href="../shop/more.html">Shop</a>
+                <a href="../shop/shop.html">Shop</a>
                 <a href="#reviews">Reviews</a>
                 <a href="#blogs">Blogs</a>
             </div>
