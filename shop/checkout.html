@@ -73,7 +73,7 @@
                         <input type="text" id="cvv" name="cvv" maxlength="4" pattern="\d{3,4}">
                     </div>
 
-                    <div id="mobileMoneyFields" style="display:none;">
+                    <div id="mobileMoneyFields">
                         <label for="mmNetwork">Network</label>
                         <select id="mmNetwork" name="mmNetwork">
                             <option value="MTN">MTN</option>
@@ -81,7 +81,16 @@
                             <option value="AirtelTigo">AirtelTigo</option>
                         </select>
                         <label for="mmNumber">Mobile Money Number</label>
-                        <input type="tel" id="mmNumber" name="mmNumber" pattern="\d{10}">
+                        <div class="mm-row">
+                            <select id="countryCode" name="countryCode">
+                                <option value="+233">+233</option>
+                                <option value="+234">+234</option>
+                                <!-- <option value="+225">+225</option>
+                                <option value="+27">+27</option> -->
+                                <!-- <option value="+1">+1</option> -->
+                            </select>
+                            <input type="tel" id="mmNumber" name="mmNumber" pattern="\d{10}" placeholder="Enter number">
+                        </div>
                     </div>
                 </fieldset>
 
