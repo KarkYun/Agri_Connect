@@ -23,7 +23,7 @@ include 'newsletter/news.php';
             <div id="nav-close" class="fas fa-times"></div>
             <a href="main/main.html">Home</a>
             <a href="#about">About</a>
-            <a href="shop/more.html">Shop</a>
+            <a href="shop/shop.html">Shop</a>
             <a href="#reviews">Reviews</a>
             <a href="#blogs">Blogs</a>
         </nav>
