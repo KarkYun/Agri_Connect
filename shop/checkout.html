@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/jpeg" href="../images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="check.css" />
+    <title>Agri Connect - Checkout</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-seedling"></i>Agri Connect</a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="../main/main.html">Home</a>
+            <a href="../index.html">Crops</a>
+            <a href="#about">About</a>
+            <a href="../shop/more.html">Shop</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <a href="../shop/more.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+    </header>
+
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" placeholder="search here..." id="search-box"/>
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <!-- Shipping Info -->
+                <fieldset>
+                    <legend>Shipping Information</legend>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <!-- Payment Options -->
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <input type="radio" id="creditCard" name="payment" value="creditCard" checked>
+                    <label for="creditCard">Credit Card</label>
+                    <input type="radio" id="mobileMoney" name="payment" value="mobileMoney">
+                    <label for="mobileMoney">Mobile Money</label>
+
+                    <div id="creditCardFields">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" maxlength="16" pattern="\d{16}">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" name="cardName">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="month" id="expiry" name="expiry">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="4" pattern="\d{3,4}">
+                    </div>
+
+                    <div id="mobileMoneyFields" style="display:none;">
+                        <label for="mmNetwork">Network</label>
+                        <select id="mmNetwork" name="mmNetwork">
+                            <option value="MTN">MTN</option>
+                            <option value="Vodafone">Vodafone</option>
+                            <option value="AirtelTigo">AirtelTigo</option>
+                        </select>
+                        <label for="mmNumber">Mobile Money Number</label>
+                        <input type="tel" id="mmNumber" name="mmNumber" pattern="\d{10}">
+                    </div>
+                </fieldset>
+
+                <!-- Tracking Info -->
+                <fieldset>
+                    <legend>Shipping & Tracking</legend>
+                    <p>Your order will be shipped within 2-5 business days.</p>
+                    <p>Tracking Number: <span id="trackingNumber">AGRI-<script>document.write(Math.floor(Math.random()*90000)+10000);</script></span></p>
+                </fieldset>
+
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../main/main.html">Home</a>
+                <a href="../index.html">Crops</a>
+                <a href="#about">About</a>
+                <a href="../shop/more.html">Shop</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#blogs">Blogs</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my orders</a>
+                <a href="#">my wishlist</a>
+                <a href="#">contact support</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+233-24-157-3153</a>
+                <a href="#"><i class="fas fa-envelope"></i>test@mail.com</a>
+                <a href="https://shorturl.at/tpnw1"><i class="fas fa-map"></i> Ghana </a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter now x</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-github"></i>github</a>
+            </div>
+            <div class="credit">created by <span>Group 10</span> | all rights reserved!</div>
+        </div>
+    </section>
+
+    <script src="checkout.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
