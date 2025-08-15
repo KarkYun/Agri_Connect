@@ -591,14 +591,14 @@ cursor: pointer;
 .btn-buy{
   display: block;
   padding: 10px 30px;
-  background: #e35f26;
+  background: #2e7d32;
   border: none;
   border-radius: 6px;
   font-size: 16px;
   color: #fff;
   margin-top: 20px auto 0;
   cursor: pointer;
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 
 #cart-close{

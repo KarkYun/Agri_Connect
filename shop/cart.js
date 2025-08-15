@@ -127,7 +127,7 @@ const cartContent = document.querySelector(".cart-content");
         updateCartCount(0);
         updateTotalPrice();
 
-        alert("Thanks for your purchase!");
+        alert("Thanks for your purchase!, Please Check Out");
        
        });
       
