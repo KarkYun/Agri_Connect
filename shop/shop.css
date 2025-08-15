@@ -598,7 +598,10 @@ cursor: pointer;
   color: #fff;
   margin-top: 20px auto 0;
   cursor: pointer;
-  /* margin-right: 200px; */
+  position: absolute;
+  right:1rem;
+ 
+  
 }
 
 #cart-close{
