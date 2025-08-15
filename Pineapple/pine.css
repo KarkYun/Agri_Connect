@@ -868,3 +868,35 @@ p{
 .gallery-section .gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+ /* <!-- added: responsive rules to stack History image below text on small screens --> */
+    
+/* keep rows side-by-side on larger screens if desired */
+      .History .rows {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+      .History .his-col {
+        flex: 1 1 50%;
+      }
+      .History .his-col img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* responsive: stack columns and ensure image comes after text */
+      @media (max-width: 768px) {
+        .History .rows {
+          flex-direction: column;
+        }
+        .History .his-col {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+        /* ensure image column appears below text column (keeps source order) */
+        .History .his-col img {
+          margin-top: 0.5rem;
+        }
+      }
