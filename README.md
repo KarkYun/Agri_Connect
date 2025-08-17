@@ -321,9 +321,9 @@ This project is for educational purposes. All rights reserved.
   - Content and feature development
   - Frontend development (HTML, CSS, JavaScript)
   - UI/UX improvements
----
 
 - **Asare Vincent**  
+---
 
 ---
 
