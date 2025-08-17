@@ -323,8 +323,10 @@ This project is for educational purposes. All rights reserved.
   - UI/UX improvements
 
 - **Asare Vincent**  
----
+
 
 ---
 
-*&copy; 2025 Group10A | All rights reserved.*
+
+
+*&copy; 2025 Group 10A | All rights reserved.*
