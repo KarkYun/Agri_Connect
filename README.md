@@ -2,7 +2,7 @@
 
 Agri Connect is a comprehensive web platform that connects buyers with verified farmers and suppliers, promoting transparency, fair pricing, and sustainable growth in the agricultural industry.
 
-## Features
+## Project Overview
 
 - 🌾 **Crop Information & Galleries** - Detailed information about various crops including shea, pineapple, cocoa, coffee, cassava, yam, maize, and rice
 - 👤 **User Authentication** - Secure registration and login system with password hashing
@@ -11,6 +11,14 @@ Agri Connect is a comprehensive web platform that connects buyers with verified 
 - 🔍 **Smart Search** - Advanced search functionality across different crop categories
 - 📱 **Responsive Design** - Mobile-first design that works on all devices
 - 🏠 **Modern UI/UX** - Clean and intuitive user interface
+
+## Academic Information
+
+   - Institution: Koforidua Technical University
+   - Program: B.Tech Computer Science 
+   - Group: 10A
+   - Project Type: Group Project
+
 
 ## Tech Stack
 
@@ -303,13 +311,13 @@ This project is for educational purposes. All rights reserved.
   - Responsive web design
   - Search and newsletter integration
 
-- **Dede [Full Name]** – Contributor  
+- **Abigail Kumi** – Contributor  
   - Content and feature development
   - Shopping cart functionality in the shop
   - Frontend development (HTML, CSS, JavaScript)
   - UI/UX improvements
 
-- **Cyrus [Full Name]** – Contributor  
+- **Cyrus Foster** – Contributor  
   - Content and feature development
   - Frontend development (HTML, CSS, JavaScript)
   - UI/UX improvements
