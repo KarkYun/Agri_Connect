@@ -304,24 +304,27 @@ This project is for educational purposes. All rights reserved.
 
 ## Group 10A Members
 
-- **Kweku Nartey Ablakwa** – Lead Programmer & Database Architect  
+- **Kweku Nartey Ablakwa** – Lead Programmer & Project Coordinator
   - Database design & implementation (MySQL)
   - Backend development (PHP) and database integration
   - Frontend development (HTML, CSS/SCSS, JavaScript)
   - Responsive web design
   - Search and newsletter integration
 
-- **Abigail Kumi** – Contributor  
+- **Abigail Kumi** – Frontend Developer & Research Specialist
   - Content and feature development
   - Shopping cart functionality in the shop
   - Frontend development (HTML, CSS, JavaScript)
   - UI/UX improvements
 
-- **Cyrus Foster** – Contributor  
+- **Cyrus Foster** – Frontend Developer & Content Specialist   
   - Content and feature development
   - Frontend development (HTML, CSS, JavaScript)
   - UI/UX improvements
 ---
 
+- **Asare Vincent**  
+
+---
 
 *&copy; 2025 Group10A | All rights reserved.*
