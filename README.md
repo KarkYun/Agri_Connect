@@ -294,6 +294,25 @@ This project is for educational purposes. All rights reserved.
 - **Server**: Apache Friends (XAMPP)
 - **Inspiration**: Supporting sustainable agriculture
 
+## Group 10A Members
+
+- **Kweku Nartey Ablakwa** – Lead Programmer & Database Architect  
+  - Database design & implementation (MySQL)
+  - Backend development (PHP) and database integration
+  - Frontend development (HTML, CSS/SCSS, JavaScript)
+  - Responsive web design
+  - Search and newsletter integration
+
+- **Dede [Full Name]** – Contributor  
+  - Content and feature development
+  - Shopping cart functionality in the shop
+  - Frontend development (HTML, CSS, JavaScript)
+  - UI/UX improvements
+
+- **Cyrus [Full Name]** – Contributor  
+  - Content and feature development
+  - Frontend development (HTML, CSS, JavaScript)
+
 ---
 
 
