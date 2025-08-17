@@ -1,4 +1,4 @@
-# Agri Connect 🌱
+# Agri Connect 
 
 Agri Connect is a comprehensive web platform that connects buyers with verified farmers and suppliers, promoting transparency, fair pricing, and sustainable growth in the agricultural industry.
 
