@@ -288,7 +288,7 @@ This project is for educational purposes. All rights reserved.
 
 ## Acknowledgments
 
-- **Team Members**: Group 10 Development Team
+- **Team Members**: Group 10A Development Team
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts
 - **Server**: Apache Friends (XAMPP)
@@ -312,8 +312,8 @@ This project is for educational purposes. All rights reserved.
 - **Cyrus [Full Name]** – Contributor  
   - Content and feature development
   - Frontend development (HTML, CSS, JavaScript)
-
+  - UI/UX improvements
 ---
 
 
-*Connecting farmers, empowering agriculture*
+*&copy; 2025 Group10A | All rights reserved.*
