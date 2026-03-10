@@ -1,0 +1,66 @@
+-- Agri_Connect Database Schema
+
+CREATE DATABASE IF NOT EXISTS agri_connect;
+USE agri_connect;
+
+CREATE TABLE USER (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL COMMENT 'Store hashed password',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE PRODUCT (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL
+);
+
+CREATE TABLE CART (
+    cart_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES USER(user_id)
+);
+
+CREATE TABLE CART_ITEM (
+    cart_item_id INT AUTO_INCREMENT PRIMARY KEY,
+    cart_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    FOREIGN KEY (cart_id) REFERENCES CART(cart_id),
+    FOREIGN KEY (product_id) REFERENCES PRODUCT(product_id)
+);
+
+CREATE TABLE `ORDER` (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES USER(user_id)
+);
+
+CREATE TABLE ORDER_ITEM (
+    order_item_id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES `ORDER`(order_id),
+    FOREIGN KEY (product_id) REFERENCES PRODUCT(product_id)
+);
+
+CREATE TABLE NEWSLETTER (
+    newsletter_id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    subscribed_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE ARTICLE (
+    article_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    content TEXT NOT NULL,
+    published_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -354,7 +354,7 @@ if(isset($_POST['subscribe'])) {
                 <h3>contact info</h3>
                 <a href="#"><i class="fas fa-phone"></i> +233-24-157-3153</a>
                 <a href="#"><i class="fas fa-envelope"></i> test@mail.com</a>
-                <a href="https://shorturl.at/tpnw1"><i class="fas fa-map"></i> Ghana</a>
+                <a href="https://maps.app.goo.gl/dzcMvg2kCywpEUjA9"><i class="fas fa-map"></i> Koforidua, Ghana</a>
             </div>
 
             <div class="box">
